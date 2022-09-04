@@ -1,0 +1,36 @@
+{
+  "name": "@mastermindzh/eslint-config",
+  "version": "1.0.2",
+  "description": "My default eslint config",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.mastermindzh.tech:mastermindzh/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Mastermindzh <info@rickvanlieshout.com> (http://rickvanlieshout.com/)",
+  "main": "index.js",
+  "scripts": {
+    "organize-package-json": "npx format-package -w && npx sort-package-json",
+    "release": "npm publish --access public"
+  },
+  "prettier": "@mastermindzh/prettier-config",
+  "dependencies": {
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.1",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "@mastermindzh/prettier-config": "^1.0.0",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.23.0",
+    "prettier": "^2.7.1"
+  }
+}
