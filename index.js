@@ -9,7 +9,7 @@ module.exports = [
   prettierConfig,
   {
     languageOptions: {
-      ecmaVersion: 2018,
+      ecmaVersion: 2022,
       sourceType: "module",
       globals: {
         ...globals.node,
@@ -68,6 +68,33 @@ module.exports = [
       "space-in-parens": ["off", "never"],
       "import/no-named-as-default": ["off"],
       "import/prefer-default-export": ["off"],
+
+      // Modern ES2019+ Rules
+      "prefer-object-spread": "error",
+      "prefer-regex-literals": "error",
+      "no-useless-catch": "error",
+      "no-misleading-character-class": "error",
+      "require-unicode-regexp": "off",
+
+      // ES2020+ Optional Chaining & Nullish Coalescing
+      "no-unused-private-class-members": "error",
+      "prefer-exponentiation-operator": "error",
+      "no-constructor-return": "error",
+      "no-dupe-else-if": "error",
+      "no-setter-return": "error",
+      "default-case-last": "error",
+      "no-unreachable-loop": "error",
+      "no-useless-backreference": "error",
+
+      // ES2021+ Logical Assignment
+      "logical-assignment-operators": ["error", "always"],
+      "no-promise-executor-return": "error",
+      "no-unsafe-optional-chaining": "error",
+      "no-nonoctal-decimal-escape": "error",
+
+      // ES2022+ Class Fields & Top-level await
+      "no-constant-binary-expression": "error",
+      "prefer-named-capture-group": "warn",
     },
   },
   {
